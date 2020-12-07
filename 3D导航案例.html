@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 40px;
+            transform-style: preserve-3d;
+            position: relative;
+            margin-top: 50px;
+            margin-left: 30px;
+            float: left;
+        }
+
+        .top {
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(23, 77, 228);
+        }
+
+        .btn {
+            content: "哗啦啦";
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            background-color: rgb(16, 215, 241);
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            transform-origin: top center;
+            transform: rotateX(90deg);
+        }
+
+        .box:hover {
+            transition-duration: 2s;
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">加油！</div>
+        <div class="btn">单身狗^c^</div>
+    </div>
+    <div class="box">
+        <div class="top" style = "background-color: yellowgreen;">今年</div>
+        <div class="btn" style = "background-color: gray;" >是单身</div>
+    </div>
+    <div class="box">
+        <div class="top " style = "background-color: black;">明年</div>
+        <div class="btn" style = "background-color: red;">还是</div>
+    </div>
+    <div class="box">
+        <div class="top" style = "background-color: sandybrown;">未来</div>
+        <div class="btn" style = "background-color: pink;">没有未来！！</div>
+    </div>
+</body>
+
+</html>
